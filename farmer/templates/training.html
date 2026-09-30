@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRAINING PAGE</title>
+    <link rel="stylesheet" href="/static/css/far.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        कृषीमित्र <span>| Training</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+    </ul>
+</nav>
+<section class="training-hero">
+
+    <h1> Agricultural Training & Workshops</h1>
+
+    <p class="training-subtitle">
+        Learn Modern Farming Techniques for Better Productivity
+    </p>
+
+    <p class="training-desc">
+        Register for agricultural training programs to learn modern farming
+        practices, organic farming, irrigation techniques, soil management,
+        pest control, and government-supported agricultural initiatives.
+    </p>
+
+    <p class="training-marathi">
+        आधुनिक शेती तंत्रज्ञान, सेंद्रिय शेती, सिंचन व्यवस्थापन,
+        मृदा परीक्षण, कीड नियंत्रण आणि विविध कृषी प्रशिक्षण कार्यक्रमांसाठी
+        येथे नोंदणी करा.
+    </p>
+
+</section>
+<section class="training-info">
+
+    <div class="training-card">
+
+        <h2>Why Join Training?</h2>
+
+        <ul>
+            <li> Learn modern farming techniques.</li>
+            <li> Improve irrigation management.</li>
+            <li> Understand soil health.</li>
+            <li> Prevent crop diseases.</li>
+            <li> Increase crop productivity.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="training-card">
+
+        <h2> Training Benefits</h2>
+
+        <ul>
+
+            <li>✔ Practical farming knowledge.</li>
+            <li>✔ Guidance from agriculture experts.</li>
+            <li>✔ Latest government initiatives.</li>
+            <li>✔ Sustainable farming methods.</li>
+            <li>✔ Better crop management skills.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="training-note">
+
+        <h2> Important Note</h2>
+
+        <p>
+            Registration does not guarantee immediate enrollment.
+            Selected participants will be contacted with training
+            schedules, venue details, and further instructions.
+            Please provide accurate information while registering.
+        </p>
+
+    </div>
+
+</section>
+<section class="form-section">
+    <h2> Training Registration Form</h2>
+
+<form action="" method="POST" novalidate class="training-form">
+    {% csrf_token %}
+    {{form2.as_p}}
+     <button type="submit" class="submit-btn">
+            Register Now
+        </button>
+</form>
+</section>
+</body>
+</html>

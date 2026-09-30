@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXPERTS</title>
+    <link rel="stylesheet" href="/static/css/far.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        कृषीमित्र <span>| Expert</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+    </ul>
+</nav>
+<section class="expert-hero">
+
+    <h1>Agricultural Expert Consultation</h1>
+
+    <p class="expert-subtitle">
+        Get professional guidance for healthier crops and better yields.
+    </p>
+
+    <p class="expert-desc">
+        Connect with agricultural experts to receive personalized advice on
+        crop selection, pest management, soil health, irrigation practices,
+        fertilizers, and modern farming techniques.
+    </p>
+
+    <p class="expert-marathi">
+        अनुभवी कृषी तज्ञांकडून पिकांचे व्यवस्थापन, कीड व रोग नियंत्रण,
+        खत व्यवस्थापन, सिंचन आणि आधुनिक शेती तंत्रज्ञानाबाबत मार्गदर्शन
+        मिळवा.
+    </p>
+
+</section>
+<section class="expert-info">
+
+    <div class="expert-card">
+        <h2>Why Consult an Expert?</h2>
+
+        <ul>
+            <li>✔ Get crop-specific recommendations.</li>
+            <li>✔ Identify pests and diseases early.</li>
+            <li>✔ Improve crop productivity.</li>
+            <li>✔ Learn modern farming practices.</li>
+            <li>✔ Reduce unnecessary farming costs.</li>
+        </ul>
+    </div>
+
+    <div class="expert-card">
+        <h2>Expert Advice</h2>
+
+        <ul>
+            <li> Choose the right crop for your soil.</li>
+            <li> Use water efficiently.</li>
+            <li> Perform regular soil testing.</li>
+            <li> Apply fertilizers in recommended quantities.</li>
+            <li> Monitor crops regularly for pests.</li>
+        </ul>
+    </div>
+
+    <div class="expert-note">
+        <h2>Important Note</h2>
+
+        <p>
+            Expert guidance is provided based on the information submitted by
+            farmers. For serious crop diseases or emergencies, farmers should
+            also contact their nearest Agriculture Department or Krishi Vigyan
+            Kendra (KVK).
+        </p>
+    </div>
+
+</section>
+<section class="form-section">
+
+    <h2>Expert Consultation Form</h2>
+
+    <form method="POST" class="expert-form">
+        {% csrf_token %}
+
+        {{ form1.as_p }}
+
+        <button type="submit" class="submit-btn">
+            Submit Request
+        </button>
+
+    </form>
+
+</section>
+
+</body>
+</html>

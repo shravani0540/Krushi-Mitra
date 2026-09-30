@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEWS PAGE</title>
+    <link rel="stylesheet" href="/static/css/new.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        कृषीमित्र <span>| Training</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+    </ul>
+</nav>
+<section class="news-hero">
+
+    <h1> बातम्या (News)</h1>
+
+    <p class="news-subtitle">
+        Stay updated with the latest agricultural news, government announcements,
+        weather alerts, market trends, and farming innovations.
+    </p>
+
+    <p class="news-marathi">
+        शेतीशी संबंधित ताज्या बातम्या, शासकीय घोषणा,
+        हवामान सूचना, बाजारातील घडामोडी आणि कृषी क्षेत्रातील
+        महत्त्वाच्या अपडेट्स येथे उपलब्ध आहेत.
+    </p>
+
+</section><br></br>
+<div class="news">
+    <marquee direction="up" scrollamount="4" height="500">
+        {% for x in all_news %}
+        <div class="box">
+            <h2>{{x.title}}</h2>
+            <p>{{x.description}}</p>
+            <h3>{{x.posteddate}}</h3>
+        </div>
+        <br>
+        {% empty %}
+        <h3>No News Available</h3>
+        {% endfor %}
+    </marquee>
+</div>
+<section class="news-info">
+    <div class="news-note">
+
+        <h2>Important Note</h2>
+
+        <p>
+            News displayed on this page is collected from reliable agricultural
+            sources. Farmers are advised to verify official announcements
+            before making important farming decisions.
+        </p>
+
+    </div>
+</section>
+</body>
+</html>

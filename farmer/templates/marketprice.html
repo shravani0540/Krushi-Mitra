@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MARKETPRICE</title>
+    <link rel="stylesheet" href="/static/css/far.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        कृषीमित्र <span>| Market Prices</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+    </ul>
+</nav>
+<section class="market-hero">
+    <h1>बाजारभाव (MARKET PRICE)</h1>
+
+    <p class="market-subtitle">शेतकऱ्यांसाठी विविध बाजार समित्यांमधील ताजे बाजारभाव येथे उपलब्ध आहेत.</p>
+    <p class="market-desc">Get the latest crop prices from nearby agricultural markets and choose the best market to maximize your profit.</p>
+    <div class="update-box">
+        Last Updated: 22 July 2026
+    </div>
+</section>
+<div class="table-container">
+    <table class="market-table">
+        <tr><th>ID</th>
+            <th>CropName</th>
+            <th>MarketName</th>
+            <th>Price</th>
+            <th>Date</th>
+        </tr>
+        {% for x in price %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.cropname}}</td>
+            <td>{{x.marketname}}</td>
+            <td>{{x.price}}</td>
+            <td>{{x.date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<section class="info-grid">
+    <div class="info-card">
+        <h2>About Market Prices</h2>
+        <p>
+            Market prices help farmers know the current selling price of different
+            crops in various markets. By checking the latest prices, farmers can
+            choose the best market to sell their produce and maximize their profit.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>मराठी माहिती</h2>
+        <p>
+            बाजारभाव विभागामध्ये विविध बाजार समित्यांमधील पिकांचे ताजे दर
+            उपलब्ध करून दिले जातात. योग्य बाजारभावाची माहिती मिळाल्यास
+            शेतकरी योग्य बाजाराची निवड करून अधिक नफा मिळवू शकतात.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>Farmer Tip</h2>
+        <p>
+            Compare prices across nearby markets before selling your crop.
+            Even a small price difference can significantly increase your
+            overall income.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h2>Important Note</h2>
+        <p>
+            Market prices are updated regularly. Actual prices may vary based
+            on crop quality, demand, quantity, and market conditions.
+        </p>
+    </div>
+</section>
+</body>
+</html>

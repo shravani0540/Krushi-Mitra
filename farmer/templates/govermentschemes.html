@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCHEME PAGE</title>
+    <link rel="stylesheet" href="/static/css/far.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">
+        कृषीमित्र <span>| Scheme</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+    </ul>
+</nav>
+<section class="scheme-hero">
+
+    <h1>Government Schemes</h1>
+
+    <p class="scheme-subtitle">
+        Empowering Farmers through Government Support
+    </p>
+
+    <p class="scheme-desc">
+        Explore the latest government schemes, subsidies, financial assistance,
+        crop insurance, and welfare programs designed to support farmers and
+        improve agricultural productivity.
+    </p>
+
+    <p class="scheme-marathi">
+        शेतकऱ्यांसाठी उपलब्ध असलेल्या विविध शासकीय योजना, अनुदाने,
+        पीक विमा, आर्थिक सहाय्य आणि कृषी विकास कार्यक्रमांची माहिती
+        येथे उपलब्ध आहे.
+    </p>
+
+</section>
+
+<div class="table-container">
+
+<table class="scheme-table">
+    <tr>
+        <td>Name</td>
+       <td>Start Date</td>
+       <td>End Date</td>
+       <td>Link</td>
+    </tr>
+    {% for x in g1 %}
+    <tr>
+        <td>{{x.name}}</td>
+        <td>{{x.startdate}}</td>
+        <td>{{x.enddate}}</td>
+        <td>{% if x.link %}
+            <a href="{{x.link}}" target="blank" style="color:blue ; text-decoration: underline;">{{x.link}}</a>
+           {% else %}
+               No Link
+           {% endif %}
+       </tr>
+    {% endfor%}
+
+</table>
+<section class="scheme-info">
+
+    <div class="scheme-card">
+        <h2>Scheme Benefits</h2>
+
+        <ul>
+            <li> Financial assistance for farmers.</li>
+            <li> Crop insurance support.</li>
+            <li> Subsidies on agricultural equipment.</li>
+            <li> Assistance for irrigation projects.</li>
+            <li> Support for sustainable farming.</li>
+        </ul>
+    </div>
+
+    <div class="scheme-card">
+        <h2>Farmer Guidance</h2>
+
+        <ul>
+            <li>✔ Check eligibility before applying.</li>
+            <li>✔ Keep Aadhaar and bank details updated.</li>
+            <li>✔ Submit applications before the deadline.</li>
+            <li>✔ Visit your nearest agriculture office if needed.</li>
+            <li>✔ Track your application status regularly.</li>
+        </ul>
+    </div>
+
+    <div class="scheme-note">
+        <h2>Important Note</h2>
+
+        <p>
+            Government schemes are updated periodically. Eligibility,
+            benefits, and application deadlines may change according
+            to official government notifications. Farmers are advised
+            to verify details before applying.
+        </p>
+    </div>
+
+</section>
+</body>
+</html>
