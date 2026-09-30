@@ -11,6 +11,14 @@ Krushi Mitra is a Django-based web application developed to support farmers by p
 - 🎓 Farmer Training Programs
 - 📰 Agricultural News Updates
 
+## 🎯 Problem Statement
+
+Farmers often struggle to access agricultural information, market prices, government schemes, and expert guidance from a single platform.
+
+## 💡 Solution
+
+Krushi Mitra provides a centralized platform where farmers can access crop information, market prices, training resources, agricultural news, and government schemes.
+
 ## 🛠 Tech Stack
 
 - Python
@@ -92,6 +100,16 @@ http://127.0.0.1:8000/
 ## 🎯 Purpose
 
 The main objective of Krushi Mitra is to provide farmers with easy access to agricultural resources, crop information, market trends, government schemes, and expert support through a simple web platform.
+
+
+## 🚀 Future Enhancements
+
+- Weather forecasting integration
+- Crop recommendation system
+- User authentication
+- Multilingual support
+- AI-powered chatbot for farmers
+
 
 ## 👩‍💻 Author
 
