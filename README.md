@@ -37,15 +37,19 @@ Krushi-Mitra/
 
 ### Home Page
 ![Home Page](screenshots/home.png)
+![Services](screenshots/home2.png)
 
 ### Crop Information
-![Crop Information](screenshots/crops.png)
+![Crop Information](screenshots/crop.png)
 
 ### Market Price Updates
-![Market Price](screenshots/marketprice.png)
+![Market Price](screenshots/market.png)
 
-### Agricultural News
-![News](screenshots/news.png)
+### Government Schem page
+![scheme](screenshots/scheme.png)
+
+### EXPERT ADVISE PAGE
+![Expert](screenshots/expert1.png)
 
 ## ⚙️ Installation & Setup
 
